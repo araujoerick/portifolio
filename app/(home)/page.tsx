@@ -6,7 +6,8 @@ export default function Home() {
       <Header />
       <main>
         <h1 className="text-4xl">
-          Olá, meu nome é Erick Araújo <span>Desenvolvedor Front-End</span>
+          Olá, meu nome é Erick Araújo{" "}
+          <span className="text-pear">Desenvolvedor Front-End</span>
         </h1>
       </main>
     </>
