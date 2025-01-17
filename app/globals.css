@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply text-neutral-700;
+}
 .container {
   @apply mx-auto w-full max-w-[1444px] px-8;
 }
