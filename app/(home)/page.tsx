@@ -14,7 +14,7 @@ export default function Home() {
             <p className="text-pear-600">Desenvolvedor Front-End</p>
           </h1>
         </div>
-        <div className="fixed bottom-4 -translate-x-1/2">
+        <div className="fixed bottom-4 left-1/2 -translate-x-1/2">
           <ButtonThemeToggle />
         </div>
       </main>
