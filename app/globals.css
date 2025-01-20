@@ -5,6 +5,11 @@
 .container {
   @apply mx-auto w-full max-w-[1444px] px-8;
 }
+
+.menu-clip-path {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
