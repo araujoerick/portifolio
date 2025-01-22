@@ -4,7 +4,7 @@ import { ButtonThemeToggle } from "../_components/ui/button-theme-toggle";
 export default function Home() {
   return (
     <>
-      <main className="relative flex h-screen flex-col items-center justify-center">
+      <main className="relative flex h-[calc(100vh-120px)] flex-col items-center justify-center">
         <div className="fixed left-1/2 top-0 -z-20 w-full -translate-x-1/2">
           <ParticlesBackground />
         </div>
