@@ -75,58 +75,65 @@ const Menu = () => {
         Menu
       </p>
 
-      <div className="menu-clip-path menu-overlay fixed left-0 top-0 z-50 h-screen w-screen bg-pear-800 px-12">
-        <div className="flex items-center justify-between gap-4 py-12">
-          <span className="text-4xl font-bold tracking-tight">
-            Araujo<span className="text-6xl leading-3 text-pear-600">.</span>
-          </span>
-          <div className="flex items-center gap-6">
-            <Button variant="outline" className="text-lg">
-              Download CV
-            </Button>
-            <button
-              onClick={toggleMenu}
-              className="cursor-pointer text-lg font-medium hover:opacity-80"
-            >
-              CLOSE
-            </button>
+      <div className="menu-clip-path menu-overlay fixed left-0 top-0 z-50 h-screen w-screen bg-pear-800">
+        <div className="flex justify-center">
+          <div className="container">
+            <div className="flex items-center justify-between gap-4 py-9">
+              <span className="text-3xl font-bold">
+                Araujo
+                <span className="text-5xl leading-3 text-pear-600">.</span>
+              </span>
+              <div className="flex items-center gap-4">
+                <Button variant="outline">Download CV</Button>
+                <button
+                  onClick={toggleMenu}
+                  className="cursor-pointer text-lg hover:opacity-80"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="flex h-[calc(100vh-120px)] flex-col justify-between">
-          <nav className="text-8xl font-medium">
-            {menuLinks.map((link) => (
-              <div
-                key={link.path}
-                className="menu-link-item group relative py-4"
-                onClick={toggleMenu}
-              >
-                <Link
-                  href={link.path}
-                  className="relative block transition-colors duration-300 hover:text-pear-600"
-                >
-                  {link.label}
-                  {pathname === link.path && (
-                    <span className="absolute -left-8 top-1/2 h-3 w-3 -translate-y-1/2 rounded-full bg-pear-600" />
-                  )}
-                </Link>
-              </div>
-            ))}
-          </nav>
+        <div className="flex justify-center">
+          <div className="container">
+            <div className="flex h-[calc(100vh-120px)] flex-col justify-between">
+              <nav className="text-8xl font-light">
+                {menuLinks.map((link) => (
+                  <div
+                    key={link.path}
+                    className="menu-link-item group relative py-4"
+                    onClick={toggleMenu}
+                  >
+                    <Link
+                      href={link.path}
+                      className="relative inline-block transition-colors duration-300 hover:text-pear-600"
+                    >
+                      {link.label}
+                      {pathname === link.path && (
+                        <span className="absolute -right-6 top-[56%] h-3 w-3 -translate-y-[56%] rounded-full bg-pear-600" />
+                      )}
+                    </Link>
+                  </div>
+                ))}
+              </nav>
 
-          <div className="flex gap-6 pb-12">
-            {socialLinks.map((link) => (
-              <Link
-                key={link.path}
-                target="_blank"
-                rel="noopener noreferrer"
-                href={link.path}
-                className="flex items-center gap-2 text-lg transition-colors duration-300 hover:text-pear-600"
-              >
-                <link.Icon className="h-6 w-6" />
-                {link.label}
-              </Link>
-            ))}
+              <div className="flex gap-6 pb-12">
+                {socialLinks.map((link) => (
+                  <Link
+                    key={link.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={link.path}
+                    className="flex gap-2 text-lg transition-colors duration-300 hover:text-pear-600"
+                  >
+                    <link.Icon className="h-6 w-6" />
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@ export default function Home() {
         </div>
         <div className="px-8">
           <h1 className="max-w-[30ch] space-y-2 text-center text-5xl">
-            <p>Olá, meu nome é Erick Araujo</p>
+            <p>Olá, sou Erick Araujo</p>
             <p className="text-pear-600">Desenvolvedor Front-End</p>
           </h1>
         </div>
