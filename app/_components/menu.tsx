@@ -7,7 +7,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
-import { Button } from "./ui/button";
+import ButtonDownloadCv from "./ui/button-cv";
 
 const menuLinks = [
   { path: "/", label: "Home" },
@@ -84,7 +84,9 @@ const Menu = () => {
                 <span className="text-5xl leading-3 text-pear-600">.</span>
               </span>
               <div className="flex items-center gap-4">
-                <Button variant="outline">Download CV</Button>
+                <ButtonDownloadCv variant="outline">
+                  Download CV
+                </ButtonDownloadCv>
                 <button
                   onClick={toggleMenu}
                   className="cursor-pointer text-lg hover:opacity-80"

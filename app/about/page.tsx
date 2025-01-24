@@ -2,13 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Button } from "../_components/ui/button";
+import ButtonDownloadCv from "../_components/ui/button-cv";
 import EducationCards from "./_components/education-cards";
 
 const AboutPage = () => {
   return (
     <section className="flex justify-center">
       <div className="container space-y-16 p-8">
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-2 items-center gap-8">
           <div className="space-y-4">
             <h1 className="text-5xl font-extralight">Sobre mim</h1>
             <p className="font-light">
@@ -29,7 +30,7 @@ const AboutPage = () => {
               experiências excepcionais aos usuários.
             </p>
             <div className="flex gap-4">
-              <Button variant="outline">Download CV</Button>
+              <ButtonDownloadCv variant="outline">Download CV</ButtonDownloadCv>
               <Button variant="outline" asChild>
                 <Link href="/portifolio">Portifolio</Link>
               </Button>

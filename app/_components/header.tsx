@@ -1,5 +1,5 @@
 import Menu from "./menu";
-import { Button } from "./ui/button";
+import ButtonDownloadCv from "./ui/button-cv";
 
 const Header = () => {
   return (
@@ -10,7 +10,7 @@ const Header = () => {
             Araujo<span className="text-5xl leading-3 text-pear-600">.</span>
           </span>
           <div className="flex items-center gap-4">
-            <Button variant="outline">Download CV</Button>
+            <ButtonDownloadCv variant="outline">Download CV</ButtonDownloadCv>
             <Menu />
           </div>
         </div>
