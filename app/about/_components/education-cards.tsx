@@ -4,7 +4,7 @@ const EducationCards = () => {
   return (
     <>
       <EducationCard
-        education="Graduação em Sistemas de Informação"
+        education="Bacharel em Sistemas de Informação"
         organization="Faculdade Santíssimo Sacramento"
         startDate="Janeiro de 2016"
         endDate="Dezembro de 2019"

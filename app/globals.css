@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply text-balance;
+}
 .container {
   @apply w-full max-w-[1440px] px-8;
 }
