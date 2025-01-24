@@ -42,6 +42,7 @@ const AboutPage = () => {
             width={500}
             height={500}
             className="rounded-full"
+            priority
           />
         </div>
 
