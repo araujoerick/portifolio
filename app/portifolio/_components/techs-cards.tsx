@@ -20,6 +20,14 @@ import TechCard from "./techs-card";
 const TechCards = () => {
   const technologies = [
     {
+      Icon: SiNextdotjs,
+      technology: "Next.js",
+    },
+    {
+      Icon: FaReact,
+      technology: "React",
+    },
+    {
       Icon: BiLogoTypescript,
       technology: "TypeScript",
     },
@@ -27,17 +35,10 @@ const TechCards = () => {
       Icon: RiJavascriptFill,
       technology: "JavaScript",
     },
-    {
-      Icon: FaReact,
-      technology: "React",
-    },
-    {
-      Icon: SiNextdotjs,
-      technology: "Next.js",
-    },
+
     {
       Icon: RiTailwindCssFill,
-      technology: "Tailwind CSS",
+      technology: "TailwindCSS",
     },
     {
       Icon: FaSass,
