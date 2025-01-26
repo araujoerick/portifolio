@@ -13,6 +13,7 @@ import {
   SiPostman,
   SiPrisma,
   SiShadcnui,
+  SiZod,
 } from "react-icons/si";
 
 import TechCard from "./techs-card";
@@ -62,6 +63,10 @@ const TechCards = () => {
     {
       Icon: FaGitAlt,
       technology: "Git",
+    },
+    {
+      Icon: SiZod,
+      technology: "Zod",
     },
     {
       Icon: SiShadcnui,
