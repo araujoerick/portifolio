@@ -1,9 +1,4 @@
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "../_components/ui/card";
+import ProjectCards from "./_components/project-cards";
 import TechCards from "./_components/techs-cards";
 
 const PortifolioPage = () => {
@@ -21,43 +16,8 @@ const PortifolioPage = () => {
         <div className="space-y-4">
           <h1 className="text-5xl font-extralight">Projetos</h1>
 
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4">
-            <Card>
-              <CardHeader>
-                <CardTitle>
-                  <h2 className="text-3xl font-extralight">Linguagens</h2>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>TypeScript</p>
-                <p>JavaScript</p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>
-                  <h2 className="text-3xl font-extralight">Linguagens</h2>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>TypeScript</p>
-                <p>JavaScript</p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>
-                  <h2 className="text-3xl font-extralight">Linguagens</h2>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>TypeScript</p>
-
-                <p>JavaScript</p>
-              </CardContent>
-            </Card>
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(330px,1fr))] gap-5">
+            <ProjectCards />
           </div>
         </div>
       </div>
