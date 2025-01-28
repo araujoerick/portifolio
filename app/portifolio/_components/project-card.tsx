@@ -50,10 +50,10 @@ const ProjectCard = ({
         </div>
       </div>
       <div className="flex gap-4 p-4">
-        <Button className="flex-1">
+        <Button className="flex-1" asChild>
           <Link href={githubLink}>Github</Link>
         </Button>
-        <Button className="flex-1">
+        <Button className="flex-1" asChild>
           <Link href={deployLink}>Deploy</Link>
         </Button>
       </div>
