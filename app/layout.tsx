@@ -27,8 +27,7 @@ export default function RootLayout({
       <body className={`${poppins.className} relative antialiased`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="dark"
           disableTransitionOnChange
         >
           <Header>
