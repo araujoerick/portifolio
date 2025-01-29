@@ -7,7 +7,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
-import ButtonDownloadCv from "./ui/button-cv";
+import Header from "./header";
 
 const menuLinks = [
   { path: "/", label: "Home" },
@@ -71,32 +71,22 @@ const Menu = () => {
 
   return (
     <div ref={containerRef}>
-      <p onClick={toggleMenu} className="cursor-pointer text-lg font-medium">
+      <p
+        onClick={toggleMenu}
+        className="cursor-pointer text-lg transition-colors duration-300 hover:text-pear-600"
+      >
         Menu
       </p>
 
       <div className="menu-clip-path menu-overlay fixed left-0 top-0 z-50 h-screen w-screen bg-pear-800">
-        <div className="flex justify-center">
-          <div className="container">
-            <div className="flex items-center justify-between gap-4 py-9">
-              <span className="text-3xl font-bold">
-                Araujo
-                <span className="text-5xl leading-3 text-pear-600">.</span>
-              </span>
-              <div className="flex items-center gap-4">
-                <ButtonDownloadCv variant="outline">
-                  Download CV
-                </ButtonDownloadCv>
-                <button
-                  onClick={toggleMenu}
-                  className="cursor-pointer text-lg hover:opacity-80"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Header>
+          <button
+            onClick={toggleMenu}
+            className="cursor-pointer text-lg transition-colors duration-300 hover:text-pear-600"
+          >
+            Close
+          </button>
+        </Header>
 
         <div className="flex justify-center">
           <div className="container">
