@@ -11,6 +11,9 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
+  {
+    ignores: ["node_modules", ".next", ".vercel"], // Deve estar aqui, no nível raiz
+  },
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
     plugins: {
