@@ -8,7 +8,7 @@ import EducationCards from "./_components/education-cards";
 const AboutPage = () => {
   return (
     <section className="flex justify-center">
-      <div className="container space-y-16 p-8">
+      <div className="container space-y-12 p-8">
         <div className="grid grid-cols-2 items-center gap-8">
           <div className="space-y-4">
             <h1 className="text-5xl font-extralight">Sobre mim</h1>
@@ -21,7 +21,7 @@ const AboutPage = () => {
               eficaz, trabalho em equipe e adaptabilidade ao enfrentar diversos
               desafios.
             </p>
-            <p>
+            <p className="font-light">
               Sou apaixonado por criar interfaces intuitivas e responsivas,
               sempre buscando as melhores práticas de acessibilidade,
               usabilidade e design. Meu objetivo é continuar evoluindo como
@@ -36,14 +36,16 @@ const AboutPage = () => {
               </Button>
             </div>
           </div>
-          <Image
-            src="/profile-pic.png"
-            alt="eu"
-            width={500}
-            height={500}
-            className="rounded-full"
-            priority
-          />
+          <div className="flex justify-center">
+            <Image
+              src="/profile-pic.png"
+              alt="eu"
+              width={500}
+              height={500}
+              className="rounded-full"
+              priority
+            />
+          </div>
         </div>
 
         <div className="space-y-4">

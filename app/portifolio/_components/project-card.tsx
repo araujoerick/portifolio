@@ -22,7 +22,7 @@ const ProjectCard = ({
   deployLink,
 }: ProjectCardProps) => {
   return (
-    <div className="flex max-w-[448px] flex-col rounded-lg border">
+    <div className="flex max-w-[448px] flex-col rounded-lg border transition-all duration-500 hover:scale-[1.02]">
       <div className="max-h-[230px] w-full overflow-hidden">
         <Image
           src={imageSrc}
@@ -40,7 +40,7 @@ const ProjectCard = ({
           <div className="flex flex-wrap gap-2">
             {techs.map((tech) => (
               <span
-                className="rounded-full border px-2 py-1 text-xs text-pear-600 hover:bg-pear-600/5"
+                className="rounded-full border border-pear-500 px-2 py-1 text-xs font-medium hover:bg-pear-600/25 dark:border-inherit dark:text-pear-600 dark:hover:bg-pear-600/5"
                 key={tech}
               >
                 {tech}
@@ -49,12 +49,16 @@ const ProjectCard = ({
           </div>
         </div>
       </div>
-      <div className="flex gap-4 p-4">
+      <div className="flex gap-4 p-4 pt-0">
         <Button className="flex-1" asChild>
-          <Link href={githubLink}>Github</Link>
+          <Link target="_blank" rel="noopener noreferrer" href={githubLink}>
+            Github
+          </Link>
         </Button>
         <Button className="flex-1" asChild>
-          <Link href={deployLink}>Deploy</Link>
+          <Link target="_blank" rel="noopener noreferrer" href={deployLink}>
+            Deploy
+          </Link>
         </Button>
       </div>
     </div>

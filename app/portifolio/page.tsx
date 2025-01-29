@@ -4,7 +4,7 @@ import TechCards from "./_components/techs-cards";
 const PortifolioPage = () => {
   return (
     <section className="flex justify-center">
-      <div className="container space-y-8 p-8">
+      <div className="container space-y-12 p-8">
         <div className="space-y-4">
           <h1 className="text-5xl font-extralight">Habilidades</h1>
 

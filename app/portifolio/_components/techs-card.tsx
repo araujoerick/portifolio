@@ -16,7 +16,7 @@ interface TechCardProps {
 const TechCard = ({ title, technologies }: TechCardProps) => {
   return (
     <div>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 transition-all duration-500 hover:scale-[1.01]">
         <Card className="min-w-[295px]">
           <CardHeader>
             <CardTitle>
@@ -26,7 +26,7 @@ const TechCard = ({ title, technologies }: TechCardProps) => {
           <CardContent className="max-[768px]:justify-cente grid grid-cols-[repeat(auto-fit,minmax(140px,1fr))] gap-2">
             {technologies.map(({ Icon, technology }) => (
               <div
-                className="flex flex-1 items-center gap-2 rounded-full p-2 hover:bg-pear/5"
+                className="flex flex-1 items-center gap-2 rounded-full p-2 hover:bg-pear-500/25 dark:hover:bg-pear/5"
                 key={technology}
               >
                 {<Icon size={28} className="min-w-min text-pear-600" />}
