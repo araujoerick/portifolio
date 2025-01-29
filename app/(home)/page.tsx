@@ -1,5 +1,8 @@
+"use client";
+
 import ParticlesBackground from "../_components/particles-background";
 import { ButtonThemeToggle } from "../_components/ui/button-theme-toggle";
+import HomeTitle from "./_components/home-title";
 
 export default function Home() {
   return (
@@ -9,9 +12,8 @@ export default function Home() {
           <ParticlesBackground />
         </div>
         <div className="px-8">
-          <h1 className="max-w-[30ch] space-y-2 text-center text-5xl">
-            <p>Olá, sou Erick Araujo</p>
-            <p className="text-pear-600">Desenvolvedor Front-End</p>
+          <h1 className="max-w-[30ch] space-y-4 text-center text-5xl">
+            <HomeTitle />
           </h1>
         </div>
         <div className="fixed bottom-4 left-1/2 -translate-x-1/2">
