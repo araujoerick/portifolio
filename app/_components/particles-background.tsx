@@ -1,8 +1,7 @@
 "use client";
-import { useEffect, useMemo, useState } from "react";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
 import type { Engine, ISourceOptions } from "@tsparticles/engine";
-
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { useEffect, useMemo, useState } from "react";
 import { loadFull } from "tsparticles";
 
 const ParticlesBackground = () => {
