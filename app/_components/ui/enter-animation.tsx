@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { PropsWithChildren } from "react";
 
@@ -6,7 +8,6 @@ const EnterAnimation = ({ children }: PropsWithChildren) => {
     <motion.section
       initial={{ opacity: 0, x: -100 }}
       whileInView={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -100 }}
       transition={{ duration: 0.5, delay: 0.3 }}
     >
       {children}

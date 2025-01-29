@@ -1,5 +1,3 @@
-"use client";
-
 import ParticlesBackground from "../_components/particles-background";
 import { ButtonThemeToggle } from "../_components/ui/button-theme-toggle";
 import HomeTitle from "./_components/home-title";

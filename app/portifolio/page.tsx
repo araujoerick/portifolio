@@ -1,5 +1,4 @@
-"use client";
-
+import EnterAnimation from "../_components/ui/enter-animation";
 import Title from "../_components/ui/title";
 import ProjectCards from "./_components/project-cards";
 import TechCards from "./_components/techs-cards";
@@ -19,9 +18,11 @@ const PortifolioPage = () => {
         <div className="space-y-4">
           <Title>Projetos</Title>
 
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(330px,1fr))] gap-5">
-            <ProjectCards />
-          </div>
+          <EnterAnimation>
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(330px,1fr))] gap-5">
+              <ProjectCards />
+            </div>
+          </EnterAnimation>
         </div>
       </div>
     </section>
