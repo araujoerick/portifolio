@@ -1,10 +1,18 @@
+"use client";
+
+import { motion } from "framer-motion";
 import React, { PropsWithChildren } from "react";
 
 import ButtonDownloadCv from "./ui/button-cv";
 
 const Header = ({ children }: PropsWithChildren) => {
   return (
-    <header className="flex justify-center">
+    <motion.header
+      initial={{ y: -120 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="flex justify-center"
+    >
       <div className="container">
         <div className="flex items-center justify-between gap-4 py-9">
           <span className="text-3xl font-bold">
@@ -16,7 +24,7 @@ const Header = ({ children }: PropsWithChildren) => {
           </div>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 };
 
