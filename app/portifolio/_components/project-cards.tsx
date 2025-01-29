@@ -6,7 +6,7 @@ const projects = [
   {
     title: "Finance Ai",
     description:
-      "Um Gerenciador de Finanças Pessoais com Inteligência Artificial.Essa é uma aplicação no modelo SaaS voltada para gestão financeira, oferecendo ferramentas úteis para que o usuário possa registrar e acompanhar a evolução de suas finanças, além de receber insights da Gemini AI baseado em suas entradas.",
+      "Um gerenciador de finanças pessoais com inteligência artificial. Essa é uma aplicação no modelo SaaS voltada para gestão financeira, oferecendo ferramentas úteis para que o usuário possa registrar e acompanhar a evolução de suas finanças, além de receber insights da Gemini AI baseado em suas entradas.",
     imageSrc: "/projects/financeai.png",
     techs: [
       "Next.js",
@@ -35,10 +35,9 @@ const projects = [
       "Tailwind CSS",
       "Motion",
       "GSAP",
-      "Vite",
-      "Vite",
-      "Vite",
-      "Vite",
+      "Shadcn",
+      "Git Hooks",
+      "Husky",
     ],
     githubLink: "https://github.com/araujoerick/portifolio",
     deployLink: "##",
@@ -46,7 +45,7 @@ const projects = [
   {
     title: "Task Manager",
     description:
-      "Organize sua rotina de forma prática com funcionalidades intuitivas: registre, edite e exclua tarefas facilmente. Classificação Inteligente: Filtre tarefas por status e organize-as por períodos do dia. Monitoramento de Hidratação: Acompanhe seu consumo diário de água para uma rotina mais saudável. Design 100% Responsivo: Acesse e gerencie suas tarefas em qualquer dispositivo, a qualquer hora.",
+      "Organize sua rotina de forma prática com funcionalidades intuitivas: registre, edite e exclua tarefas facilmente em qualquer dispositivo. Filtre tarefas por status e organize-as por períodos do dia. Monitoramento de Hidratação: Acompanhe seu consumo diário de água para uma rotina mais saudável.",
     imageSrc: "/projects/task-manager.png",
     techs: [
       "React",
@@ -67,7 +66,7 @@ const projects = [
   {
     title: "Dogs - Rede Social",
     description:
-      "Dogs - Uma rede social para cachorro. Compartilhe momentos únicos do seu cãozinho em uma plataforma interativa! Poste fotos, comente e curta publicações em um feed com scroll infinito para nunca perder nada. Crie sua conta, faça login e acompanhe seu feed exclusivo. Além disso, confira estatísticas sobre os acessos às suas fotos. Desenvolvido com React e CSS Modules, este projeto oferece uma experiência dinâmica e responsiva.",
+      "Compartilhe momentos únicos do seu cãozinho em uma plataforma interativa! Poste fotos, comente e curta publicações em um feed com scroll infinito para nunca perder nada. Crie sua conta, faça login e acompanhe seu feed exclusivo. Além disso, confira estatísticas sobre os acessos às suas fotos.",
     imageSrc: "/projects/dogs-social.png",
     techs: [
       "React",
