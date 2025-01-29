@@ -1,7 +1,8 @@
-import Menu from "./menu";
+import React, { PropsWithChildren } from "react";
+
 import ButtonDownloadCv from "./ui/button-cv";
 
-const Header = () => {
+const Header = ({ children }: PropsWithChildren) => {
   return (
     <header className="flex justify-center">
       <div className="container">
@@ -11,7 +12,7 @@ const Header = () => {
           </span>
           <div className="flex items-center gap-4">
             <ButtonDownloadCv variant="outline">Download CV</ButtonDownloadCv>
-            <Menu />
+            {children}
           </div>
         </div>
       </div>
