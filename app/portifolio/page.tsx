@@ -1,3 +1,6 @@
+"use client";
+
+import Title from "../_components/ui/title";
 import ProjectCards from "./_components/project-cards";
 import TechCards from "./_components/techs-cards";
 
@@ -6,7 +9,7 @@ const PortifolioPage = () => {
     <section className="flex justify-center">
       <div className="container space-y-12 p-8">
         <div className="space-y-4">
-          <h1 className="text-5xl font-extralight">Habilidades</h1>
+          <Title>Habilidades</Title>
 
           <div className="flex flex-col gap-4">
             <TechCards />
@@ -14,7 +17,7 @@ const PortifolioPage = () => {
         </div>
 
         <div className="space-y-4">
-          <h1 className="text-5xl font-extralight">Projetos</h1>
+          <Title>Projetos</Title>
 
           <div className="grid grid-cols-[repeat(auto-fit,minmax(330px,1fr))] gap-5">
             <ProjectCards />

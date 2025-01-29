@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+
 import { IconType } from "react-icons/lib";
 
 import {
@@ -7,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/app/_components/ui/card";
+import EnterAnimation from "@/app/_components/ui/enter-animation";
 
 interface TechCardProps {
   title: string;
@@ -15,7 +17,7 @@ interface TechCardProps {
 
 const TechCard = ({ title, technologies }: TechCardProps) => {
   return (
-    <div>
+    <EnterAnimation>
       <div className="flex flex-col gap-4 transition-all duration-500 hover:scale-[1.01]">
         <Card className="min-w-[295px]">
           <CardHeader>
@@ -36,7 +38,7 @@ const TechCard = ({ title, technologies }: TechCardProps) => {
           </CardContent>
         </Card>
       </div>
-    </div>
+    </EnterAnimation>
   );
 };
 
