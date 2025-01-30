@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 
 import { Button } from "../_components/ui/button";
 import ButtonDownloadCv from "../_components/ui/button-cv";
 import EnterAnimation from "../_components/ui/enter-animation";
 import Title from "../_components/ui/title";
+import DragConstraints from "./_components/about-image";
 import EducationCards from "./_components/education-cards";
 
 const AboutPage = () => {
@@ -53,14 +53,7 @@ const AboutPage = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex justify-center"
           >
-            <Image
-              src="/profile-pic.png"
-              alt="minha foto"
-              width={500}
-              height={500}
-              className="rounded-full"
-              priority
-            />
+            <DragConstraints />
           </motion.div>
         </div>
 
