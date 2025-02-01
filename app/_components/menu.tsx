@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 import Header from "./header";
+import { ButtonThemeToggle } from "./ui/button-theme-toggle";
 
 const menuLinks = [
   { path: "/", label: "Home" },
@@ -111,19 +112,22 @@ const Menu = () => {
                 ))}
               </nav>
 
-              <div className="flex gap-6 pb-12">
-                {socialLinks.map((link) => (
-                  <Link
-                    key={link.path}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={link.path}
-                    className="flex gap-2 text-lg transition-colors duration-300 hover:text-pear-600"
-                  >
-                    <link.Icon className="h-6 w-6" />
-                    {link.label}
-                  </Link>
-                ))}
+              <div className="flex items-center justify-between gap-6 pb-12">
+                <div className="flex gap-6">
+                  {socialLinks.map((link) => (
+                    <Link
+                      key={link.path}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={link.path}
+                      className="flex gap-2 text-lg transition-colors duration-300 hover:text-pear-600"
+                    >
+                      <link.Icon className="h-6 w-6" />
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+                <ButtonThemeToggle />
               </div>
             </div>
           </div>
