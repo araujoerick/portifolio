@@ -8,7 +8,7 @@ const ButtonDownloadCv = ({
   ...props
 }: React.PropsWithChildren<ButtonProps>) => {
   return (
-    <Button {...props} className="bg-inherit" asChild>
+    <Button {...props} className="bg-inherit p-2 text-xs sm:text-sm" asChild>
       <Link
         href="/docs/araujoerick-curriculo.pdf"
         target="_blank"
