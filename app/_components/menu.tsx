@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 import Header from "./header";
+import ButtonDownloadCv from "./ui/button-cv";
 import { ButtonThemeToggle } from "./ui/button-theme-toggle";
 
 const menuLinks = [
@@ -79,8 +80,11 @@ const Menu = () => {
         Menu
       </p>
 
-      <div className="menu-clip-path menu-overlay fixed left-0 top-0 z-50 h-screen w-screen bg-pear-800">
+      <div className="menu-clip-path menu-overlay fixed left-0 top-0 z-50 h-screen w-full overflow-hidden bg-pear-800">
         <Header>
+          <ButtonDownloadCv variant="outline" className="text-xs sm:text-base">
+            Download CV
+          </ButtonDownloadCv>
           <button
             onClick={toggleMenu}
             className="cursor-pointer text-lg transition-colors duration-300 hover:text-pear-600"
@@ -89,14 +93,14 @@ const Menu = () => {
           </button>
         </Header>
 
-        <div className="flex justify-center">
-          <div className="container">
-            <div className="flex h-[calc(100vh-120px)] flex-col justify-between">
-              <nav className="text-8xl font-light">
+        <div className="flex h-[calc(100%-112px)] justify-center">
+          <div className="h-full w-full px-8 py-12">
+            <div className="flex h-full flex-col justify-between">
+              <nav className="text-6xl font-light sm:text-8xl">
                 {menuLinks.map((link) => (
                   <div
                     key={link.path}
-                    className="menu-link-item group relative py-4"
+                    className="menu-link-item relative py-4"
                     onClick={toggleMenu}
                   >
                     <Link
@@ -112,7 +116,7 @@ const Menu = () => {
                 ))}
               </nav>
 
-              <div className="flex items-center justify-between gap-6 pb-12">
+              <div className="flex items-center justify-between gap-6">
                 <div className="flex gap-6">
                   {socialLinks.map((link) => (
                     <Link
@@ -120,7 +124,7 @@ const Menu = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       href={link.path}
-                      className="flex gap-2 text-lg transition-colors duration-300 hover:text-pear-600"
+                      className="flex gap-2 transition-colors duration-300 hover:text-pear-600 sm:text-lg"
                     >
                       <link.Icon className="h-6 w-6" />
                       {link.label}
