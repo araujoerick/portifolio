@@ -17,7 +17,7 @@ const TechCard = ({ title, technologies }: TechCardProps) => {
   return (
     <EnterAnimation>
       <div className="flex flex-col gap-4 transition-all duration-500 hover:scale-[1.01]">
-        <Card className="min-w-[295px]">
+        <Card className="min-w-[295px] dark:border-none dark:bg-neutral-900">
           <CardHeader>
             <CardTitle>
               <h2 className="text-3xl font-extralight">{title}</h2>
