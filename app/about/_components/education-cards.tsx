@@ -2,6 +2,7 @@ import EducationCard from "./education-card";
 
 const educationData = [
   {
+    type: "GRADUAÇÃO",
     education: "Bacharel em Sistemas de Informação",
     organization: "Faculdade Santíssimo Sacramento",
     startDate: "Janeiro de 2016",
@@ -51,6 +52,7 @@ const EducationCards = () => {
         <EducationCard
           key={`empty-${index}`}
           education="Em breve..."
+          type=""
           organization=""
           startDate=""
           endDate=""
