@@ -1,22 +1,30 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 
-import { Button } from "../_components/ui/button";
 import ButtonDownloadCv from "../_components/ui/button-cv";
 import EnterAnimation from "../_components/ui/enter-animation";
 import Title from "../_components/ui/title";
-import DragConstraints from "./_components/about-image";
+import AboutImage from "./_components/about-image";
 import EducationCards from "./_components/education-cards";
 
 const AboutPage = () => {
   return (
     <section className="flex justify-center">
       <div className="container space-y-12 p-8">
-        <div className="grid grid-cols-2 items-center gap-8">
+        <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 100 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="flex justify-center"
+          >
+            <AboutImage />
+          </motion.div>
+
           <EnterAnimation>
-            <div className="space-y-4">
+            <div className="space-y-8">
               <Title>Sobre mim</Title>
               <p className="font-light">
                 Desenvolvedor Front-end com conhecimento em HTML, CSS e Tailwind
@@ -36,28 +44,18 @@ const AboutPage = () => {
                 experiências excepcionais aos usuários.
               </p>
               <div className="flex gap-4">
-                <ButtonDownloadCv variant="outline">
+                <ButtonDownloadCv
+                  variant={"outline"}
+                  className="text-xs sm:text-sm"
+                >
                   Download CV
                 </ButtonDownloadCv>
-                <Button variant="outline" asChild>
-                  <Link href="/portifolio">Portifolio</Link>
-                </Button>
               </div>
             </div>
           </EnterAnimation>
-
-          <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 100 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex justify-center"
-          >
-            <DragConstraints />
-          </motion.div>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-8">
           <Title>Formações</Title>
           <EducationCards />
         </div>
