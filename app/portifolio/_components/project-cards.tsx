@@ -54,6 +54,7 @@ const projects = [
       "React Query",
       "React Hook Form",
       "Zod",
+      "Zustand",
       "Axios",
       "Node",
       "Prisma",
