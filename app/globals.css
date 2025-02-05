@@ -6,7 +6,7 @@ body {
   @apply text-balance;
 }
 .container {
-  @apply w-full max-w-[1440px] px-4 sm:px-8;
+  @apply w-[calc(100vw+17px)] max-w-[1440px] px-4 sm:px-8;
 }
 
 .menu-clip-path {
@@ -66,15 +66,15 @@ body {
     --radius: 0.5rem;
   }
   .dark {
-    --background: 0 0% 8%;
+    --background: 0 0% 4%;
 
     --foreground: 0 0% 98%;
 
-    --card: 0 0% 8%;
+    --card: 0 0% 4%;
 
     --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 8%;
+    --popover: 0 0% 4%;
 
     --popover-foreground: 0 0% 98%;
 
