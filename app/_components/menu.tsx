@@ -82,7 +82,10 @@ const Menu = () => {
 
       <div className="menu-clip-path menu-overlay fixed left-0 top-0 z-50 h-screen w-full overflow-hidden bg-pear-800">
         <Header>
-          <ButtonDownloadCv variant="outline" className="text-xs sm:text-base">
+          <ButtonDownloadCv
+            variant="outline"
+            className="border-none bg-pear-700 text-xs hover:bg-pear-600 dark:hover:bg-pear-900 sm:text-base"
+          >
             Download CV
           </ButtonDownloadCv>
           <button
