@@ -44,10 +44,7 @@ const AboutPage = () => {
                 experiências excepcionais aos usuários.
               </p>
               <div className="flex gap-4">
-                <ButtonDownloadCv
-                  variant={"outline"}
-                  className="text-xs sm:text-sm"
-                >
+                <ButtonDownloadCv className="text-xs transition-colors duration-300 hover:bg-pear-600 hover:text-inherit hover:shadow-[0_0_35px_-10px] hover:shadow-pear-600 dark:hover:bg-pear-700 sm:text-sm">
                   Download CV
                 </ButtonDownloadCv>
               </div>
